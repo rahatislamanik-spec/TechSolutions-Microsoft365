@@ -1,8 +1,8 @@
 # TechSolutions Inc. — Microsoft 365 Enterprise Deployment
 
-### One Tenant. Every Layer. Built End to End in a Live M365 Environment.
+### Microsoft 365 Administration Case Study in a Live Lab Tenant
 
-**Md Rahat Islam Anik · Self-Directed Case Study · 2025**
+**Md Rahat Islam Anik · Self-Directed Microsoft 365 Case Study · 2025**
 
 [![Live Case Study](https://img.shields.io/badge/Live%20Case%20Study-View%20Now-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)](https://rahatislamanik-spec.github.io/TechSolutions-Microsoft365/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-rahatislamanik-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/rahatislamanik)
@@ -10,22 +10,37 @@
 
 ---
 
-| 300 Employees Onboarded | 3 Departments Configured | M365 E5 Deployed | 4 Phases | 0 Data Breaches Undetected |
+| 300-Employee Scenario | 10 Sample Users | 3 Departments | M365 E5 Lab Tenant | DLP Alert Validated |
 |:---:|:---:|:---:|:---:|:---:|
 
 ---
 
 ## The Brief
 
-TechSolutions Inc. was moving 300 employees to Microsoft 365 and needed it done right — not just functional, but secure, compliant, and built to scale. This is the complete deployment story: identity, security, collaboration, and monitoring, configured end to end inside a **live Microsoft 365 tenant**.
+TechSolutions Inc. is a representative 300-employee Microsoft 365 deployment scenario. The lab implementation uses 10 sample users across IT, HR, and Marketing to demonstrate the administrative workflow: identity, licensing, collaboration, security controls, DLP validation, monitoring, and automation inside a **live Microsoft 365 lab tenant**.
 
-Every configuration in this case study was applied to a real tenant. Every screenshot is live verification. This is not a simulation.
+The screenshots show real portal configuration work performed in a lab tenant. The project is not presented as a production rollout; it is a portfolio case study designed to show Microsoft 365 administrator judgment, documentation, and validation discipline.
+
+---
+
+## Evidence Status
+
+| Area | Status | Evidence |
+|---|---|---|
+| Bulk user onboarding | Implemented with 10 sample users | CSV import and Admin Center screenshots |
+| E5 licensing | Implemented in lab tenant | Active users and license assignment screenshots |
+| M365 groups and SharePoint access | Implemented in lab tenant | Group, SharePoint, and Teams screenshots |
+| Defender, anti-phishing, Safe Links, Safe Attachments | Configured in lab tenant | Defender policy screenshots |
+| DLP policies | Configured and test-alert validated | Purview DLP policy and alert screenshots |
+| Insider Risk / Adaptive Protection | Configured as lab policy evidence | Purview screenshots |
+| Power Automate reporting | Built as scheduled lab flow | Flow configuration screenshots |
+| Sensitivity labels, PIM, Intune | Roadmap | Not implemented in this repo |
 
 ---
 
 ## Tech Stack
 
-`Microsoft Entra ID` · `Exchange Online` · `SharePoint Online` · `OneDrive for Business` · `Microsoft Defender for Office 365` · `Microsoft Purview` · `DLP` · `Insider Risk Management` · `Adaptive Protection` · `Viva Engage` · `Power Automate` · `Microsoft Graph API` · `Microsoft Secure Score` · `Service Health`
+`Microsoft Entra ID` · `Exchange Online` · `SharePoint Online` · `OneDrive for Business` · `Microsoft Defender for Office 365` · `Microsoft Purview` · `DLP` · `Insider Risk Management` · `Adaptive Protection` · `Viva Engage` · `Power Automate` · `Microsoft Secure Score` · `Service Health`
 
 ---
 
@@ -36,7 +51,7 @@ Every configuration in this case study was applied to a real tenant. Every scree
 Before a single email is sent or a document shared, the right people need to be in the right places with the right access. Phase 01 established TechSolutions' identity layer from the ground up.
 
 **Bulk User Onboarding via CSV**
-300 employees across three departments — IT, HR, and Marketing — were onboarded via structured CSV import through the Microsoft 365 Admin Center. Each account was provisioned with correct UPN, display name, department, and country metadata in a single operation. At scale, manual account creation isn't an option. Bulk CSV import is how enterprise IT teams handle real onboarding — repeatable, auditable, and error-resistant.
+The 300-employee scenario was modeled using 10 sample users across three departments — IT, HR, and Marketing — onboarded via structured CSV import through the Microsoft 365 Admin Center. Each sample account was provisioned with UPN, display name, department, and country metadata. At scale, manual account creation is not practical; bulk CSV import demonstrates a repeatable and auditable onboarding pattern.
 
 **Microsoft 365 E5 Licensing**
 Every account was assigned an M365 E5 license — the highest tier, unlocking Defender, Purview, Power Automate, and the full compliance stack. Profile pictures were standardized with the TechSolutions company logo across Admin Center, Teams, and Outlook. Department fields, job titles, and contact information were populated tenant-wide.
@@ -48,7 +63,7 @@ Four M365 Groups were created and configured:
 TechSolutions-IT        → IT department members
 TechSolutions-HR        → HR department members
 TechSolutions-Marketing → Marketing department members
-TechSolutions-All       → All 300 users, tenant-wide communications
+TechSolutions-All       → All sample users, tenant-wide communications model
 ```
 
 Each group creation automatically provisions a shared mailbox, SharePoint site, Teams workspace, and Planner — one action, five connected services.
@@ -62,7 +77,7 @@ Permissions were configured at group level. The HR group received Full Control o
 
 > **Locking the Perimeter** · Defender · OME Encryption · DLP · Insider Risk · Adaptive Protection
 
-An M365 tenant without hardened security is an open door. Phase 02 covered every threat surface: email-borne attacks, phishing, malware, unauthorized data exfiltration, and internal data leaks.
+An M365 tenant needs layered controls across identity, email, data, and collaboration. Phase 02 configured representative security controls for email-borne attacks, phishing, malware handling, unauthorized data sharing, and internal data leak detection.
 
 **Microsoft Defender for Office 365 — Safe Links & Safe Attachments**
 Safe Links and Safe Attachments were enabled under Preset Security Policies (Standard and Strict), applied to all inbound email. Safe Links rewrites every URL at time-of-click against Microsoft's threat intelligence database in real time. Safe Attachments detonates suspicious files in a sandbox before delivery. Extended protection was configured across Teams and Office 365 Apps with click-tracking enabled.
@@ -114,7 +129,7 @@ A dedicated HR Documents Library was configured with two critical governance con
 - **Draft item security** — draft visibility restricted to authors and approvers only
 
 **OneDrive for Business — External Sharing Restriction & Retention Policies**
-Organization-wide OneDrive external sharing was locked to *"Only people in your organization"* — no file can leave the tenant without admin authorization. Two retention policies were applied:
+Organization-wide OneDrive external sharing was restricted to *"Only people in your organization"* for the lab tenant. Two retention policies were applied:
 
 - **5-year retention policy** — all OneDrive files retained for long-term compliance
 - **1-year deletion policy** — stale files automatically moved to Recycle Bin after 12 months of inactivity
@@ -123,7 +138,7 @@ Organization-wide OneDrive external sharing was locked to *"Only people in your 
 Viva Engage was configured as TechSolutions' enterprise social network with a strict internal-only policy — all activity restricted to authenticated tenant users only. Four communities were created and confirmed:
 
 ```
-Company-Wide Announcements  → All 300 users
+Company-Wide Announcements  → All sample users
 TechSolutions-IT            → IT department
 TechSolutions-HR            → HR department
 TechSolutions-Marketing     → Marketing department
@@ -153,11 +168,11 @@ A Suspicious File Activity alert policy was created to notify administrators whe
 
 Severity, threshold, and recipient list configured and policy confirmed active.
 
-**Power Automate — Automated Monthly Usage Reports via Microsoft Graph API**
+**Power Automate — Automated Monthly Usage Reports**
 A scheduled Power Automate cloud flow was built and deployed to automatically generate and deliver monthly M365 usage reports to IT administrators and department heads. The flow:
 
 1. Runs on monthly recurrence
-2. Retrieves the previous 30 days of activity via **Microsoft Graph API**
+2. Retrieves the previous 30 days of Microsoft 365 activity data
 3. Formats the data as CSV
 4. Emails the report to the distribution list
 
@@ -167,7 +182,7 @@ Coverage: email activity, SharePoint usage, and security events. Flow tested and
 Service Health email alerts were enabled to automatically notify administrators of any M365 service incidents, advisories, or degradations. All services confirmed healthy post-deployment: Exchange Online, OneDrive, SharePoint, Teams, and Viva Engage. IT department team members were added as additional notification recipients alongside the global admin — no incident goes unnoticed.
 
 **Final Secure Score Review**
-With all four phases complete, the Secure Score dashboard was reviewed as the final validation checkpoint. The score reflects the cumulative effect of every security configuration applied across identity, data, email, and collaboration — confirming TechSolutions' tenant is hardened against the most common threat categories facing a mid-sized Canadian organization.
+With all four phases complete, the Secure Score dashboard was reviewed as the final validation checkpoint. The score provided a baseline view of the lab tenant's security posture and highlighted additional hardening actions for future improvement.
 
 ---
 
@@ -181,7 +196,7 @@ With all four phases complete, the Secure Score dashboard was reviewed as the fi
 | **Compliance & Governance** | Retention policies, content approval, document versioning, audit log search, Purview |
 | **Insider Risk** | Data leaks policy, Adaptive Protection, Conditional Access integration, risk-based controls |
 | **Collaboration Tools** | SharePoint Online, OneDrive governance, Viva Engage communities, Microsoft Teams |
-| **Automation** | Power Automate scheduled flows, Microsoft Graph API, automated reporting pipelines |
+| **Automation** | Power Automate scheduled flows, usage reporting workflow design |
 | **Monitoring** | Custom audit searches, alert policies, service health monitoring, Secure Score tracking |
 
 ---
@@ -206,14 +221,14 @@ The full interactive case study — with phase-by-phase documentation and live-t
 
 ---
 
-> *Every screenshot in this case study was taken from a real Microsoft 365 tenant with real configurations applied. TechSolutions' environment was designed, deployed, secured, and instrumented — end to end — by one administrator.*
+> *This case study documents a Microsoft 365 lab tenant configured by one administrator to model identity, collaboration, security, compliance, monitoring, and reporting workflows for a 300-employee organization.*
 
 ---
 
 ## Author
 
 **Md Rahat Islam Anik**
-Cloud Computing & Network Administration · George Brown College · May 2026
+Microsoft 365 · Entra ID · Cloud Administration · May 2026
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat&logo=linkedin)](https://linkedin.com/in/rahatislamanik)
 [![GitHub](https://img.shields.io/badge/GitHub-Portfolio-181717?style=flat&logo=github)](https://github.com/rahatislamanik-spec)
