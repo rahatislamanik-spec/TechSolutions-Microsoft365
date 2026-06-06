@@ -658,11 +658,11 @@ footer p {
 <div class="hero">
   <div class="hero-eyebrow">
     <img src="assets/logo/techsolutions-logo.jpg" class="company-logo" alt="TechSolutions">
-    <span class="eyebrow-text">Microsoft 365 · Enterprise Deployment · Self-Directed · 2025</span>
+    <span class="eyebrow-text">Microsoft 365 · Lab Tenant Case Study · Self-Directed · 2025</span>
   </div>
-  <h1>One Tenant.<br><span class="accent">Every Layer.</span></h1>
+  <h1>Microsoft 365<br><span class="accent">Admin Case Study.</span></h1>
   <p class="hero-desc">
-    TechSolutions Inc. was moving 300 employees to Microsoft 365 and needed it done right — not just functional, but secure, compliant, and built to scale. This is the complete deployment story: identity, security, collaboration, and monitoring, configured end to end inside a live M365 tenant.
+    TechSolutions Inc. is a representative 300-employee Microsoft 365 scenario implemented with 10 sample users in a live lab tenant. The case study documents identity, licensing, collaboration, security controls, DLP validation, monitoring, and automation workflows.
   </p>
   <div class="hero-pills">
     <span class="pill pill-blue">Microsoft Entra ID</span>
@@ -680,11 +680,11 @@ footer p {
 <div class="stats">
   <div class="stat">
     <span class="stat-val">300</span>
-    <span class="stat-label">Employees Onboarded</span>
+    <span class="stat-label">Employee Scenario</span>
   </div>
   <div class="stat">
-    <span class="stat-val">3</span>
-    <span class="stat-label">Departments Configured</span>
+    <span class="stat-val">10</span>
+    <span class="stat-label">Sample Users</span>
   </div>
   <div class="stat">
     <span class="stat-val">E5</span>
@@ -695,8 +695,8 @@ footer p {
     <span class="stat-label">Deployment Phases</span>
   </div>
   <div class="stat">
-    <span class="stat-val">0</span>
-    <span class="stat-label">Data Breaches Undetected</span>
+    <span class="stat-val">DLP</span>
+    <span class="stat-label">Alert Validated</span>
   </div>
 </div>
 
@@ -725,7 +725,7 @@ footer p {
           TechSolutions has three departments: <strong>IT, HR, and Marketing</strong>. Rather than creating user accounts one by one, I prepared a structured CSV file containing all 10 employee accounts — with UPN, display name, department, and country — then imported them directly through the <strong>Microsoft 365 Admin Center</strong> in a single operation. Every account was automatically provisioned with correct departmental metadata from day one.
         </p>
         <div class="highlight">
-          <strong>Why this matters:</strong> At 300 employees, manual account creation isn't an option. Bulk CSV import is how enterprise IT teams handle real-scale onboarding — repeatable, auditable, and error-resistant.
+          <strong>Why this matters:</strong> In a 300-employee environment, manual account creation is not practical. The 10-user lab import demonstrates the repeatable onboarding pattern an administrator would scale with proper review and change control.
         </div>
         <div class="ss-grid cols-2">
           <figure class="ss">
@@ -792,7 +792,7 @@ footer p {
       <div class="sub-section">
         <div class="sub-title">User Permissions — SharePoint Access &amp; Teams Creation Rights</div>
         <p class="phase-story">
-          Permissions were configured at the group level: the <strong>HR group</strong> received Full Control on the TechSolutions HR SharePoint site and Edit-level access for members — ensuring sensitive HR documents remain locked down by default. The <strong>Marketing group</strong> was granted rights to create and manage Microsoft Teams workspaces, confirmed by successfully provisioning a Marketing team and adding all Marketing users as members.
+          Permissions were configured at the group level: the <strong>HR group</strong> received Full Control on the TechSolutions HR SharePoint site and Edit-level access for members, supporting a more restricted HR collaboration model. The <strong>Marketing group</strong> was granted rights to create and manage Microsoft Teams workspaces, confirmed by successfully provisioning a Marketing team and adding all Marketing users as members.
         </p>
         <div class="ss-grid cols-2">
           <figure class="ss">
@@ -816,7 +816,7 @@ footer p {
   <div class="section-eyebrow">Phase 02</div>
   <h2>Security &amp; Data Protection — <em>Locking the Perimeter</em></h2>
   <p class="section-intro">
-    An M365 tenant without hardened security is an open door. Phase 02 covered every threat surface: email-borne attacks, phishing, malware, unauthorized data sharing, and internal data leaks. From Microsoft Defender to Purview DLP, every protection layer was configured and verified in a live tenant.
+    An M365 tenant needs layered controls across identity, email, data, and collaboration. Phase 02 configured representative protections for email-borne attacks, phishing, malware handling, unauthorized data sharing, and internal data leak detection in a live lab tenant.
   </p>
 
   <div class="phase">
@@ -832,7 +832,7 @@ footer p {
       <div class="sub-section">
         <div class="sub-title">Microsoft Defender for Office 365 — Safe Links &amp; Safe Attachments</div>
         <p class="phase-story">
-          <strong>Safe Links</strong> and <strong>Safe Attachments</strong> were enabled under Preset Security Policies — Standard and Strict protection applied to all inbound email. Safe Links rewrites every URL at time-of-click, checking against Microsoft's threat intelligence database in real time. Safe Attachments detonates suspicious files in a sandbox before delivery. These two controls alone eliminate the most common enterprise attack vectors.
+          <strong>Safe Links</strong> and <strong>Safe Attachments</strong> were enabled under Preset Security Policies — Standard and Strict protection applied to inbound email in the lab. Safe Links rewrites URLs at time-of-click and Safe Attachments evaluates suspicious files before delivery. Together, these controls reduce common email-based risk.
         </p>
         <div class="ss-grid cols-2">
           <figure class="ss">
@@ -911,7 +911,7 @@ footer p {
       <div class="sub-section">
         <div class="sub-title">Insider Risk Management &amp; Adaptive Protection</div>
         <p class="phase-story">
-          Beyond perimeter security, <strong>Insider Risk Management</strong> was configured in Microsoft Purview to detect threats from within. A <em>Data Leaks quick policy</em> was deployed covering all active users, with DLP policies integrated as policy indicators. <strong>Adaptive Protection</strong> was enabled to dynamically tighten Conditional Access controls for users whose risk score elevates — automatically restricting Office app access without requiring manual admin intervention.
+          Beyond perimeter security, <strong>Insider Risk Management</strong> was configured in Microsoft Purview to model internal data leak detection. A <em>Data Leaks quick policy</em> was deployed for lab users, with DLP policies integrated as policy indicators. <strong>Adaptive Protection</strong> evidence was captured to show how risk-based controls can be staged and reviewed.
         </p>
         <div class="ss-grid cols-2">
           <figure class="ss">
@@ -1104,7 +1104,7 @@ footer p {
       <div class="sub-section">
         <div class="sub-title">Power Automate — Automated Monthly Usage Reports</div>
         <p class="phase-story">
-          A <strong>scheduled Power Automate cloud flow</strong> was built and deployed to automatically generate and deliver monthly Microsoft 365 usage reports to IT administrators and department heads. The flow runs on a monthly recurrence, retrieves the previous 30 days of activity via <strong>Microsoft Graph API</strong>, formats the data as CSV, and emails it to the distribution list — covering email activity, SharePoint usage, and security events. The flow was tested and confirmed active.
+          A <strong>scheduled Power Automate cloud flow</strong> was built to generate and deliver monthly Microsoft 365 usage reports to IT administrators and department heads. The flow runs on a monthly recurrence, retrieves recent Microsoft 365 activity data, formats the data as CSV, and emails it to the distribution list. The flow was tested and confirmed active in the lab tenant.
         </p>
         <div class="ss-grid cols-2">
           <figure class="ss">
@@ -1134,7 +1134,7 @@ footer p {
       <div class="sub-section">
         <div class="sub-title">Final Secure Score Review</div>
         <p class="phase-story">
-          With all four phases complete, the <strong>Microsoft Secure Score</strong> dashboard was reviewed as a final validation checkpoint. The score reflects the cumulative effect of all security configurations applied across identity, data, email, and collaboration — confirming that TechSolutions' M365 tenant is hardened against the most common threat categories facing a mid-sized Canadian organization.
+          With all four phases complete, the <strong>Microsoft Secure Score</strong> dashboard was reviewed as a final validation checkpoint. The score provided a baseline view of the lab tenant's security posture and highlighted additional hardening actions for future improvement.
         </p>
         <div class="ss-grid cols-1">
           <figure class="ss">
@@ -1154,7 +1154,7 @@ footer p {
   <div class="roadmap-inner">
     <div class="section-eyebrow" style="margin-bottom:1rem;">What's Next</div>
     <h2 style="font-family:'Syne',sans-serif;font-size:clamp(1.8rem,3vw,2.5rem);font-weight:700;color:#fff;margin-bottom:0.5rem;">Phase 05 — Information Protection Roadmap</h2>
-    <p style="color:var(--muted);font-size:0.97rem;max-width:680px;">The foundation is in place. These are the logical next steps to complete TechSolutions' information protection framework — each building directly on what's already deployed.</p>
+    <p style="color:var(--muted);font-size:0.97rem;max-width:680px;">The foundation is in place. These roadmap items are logical next steps for expanding the lab into a more complete information protection and endpoint management case study.</p>
     <div class="roadmap-grid">
       <div class="roadmap-card">
         <div class="roadmap-icon">🏷️</div>
@@ -1164,7 +1164,7 @@ footer p {
       <div class="roadmap-card">
         <div class="roadmap-icon">🔐</div>
         <h4>Microsoft Entra PIM</h4>
-        <p>Privileged Identity Management for just-in-time admin role activation. Global Administrator access time-bound and approval-gated — least privilege enforced at the highest level.</p>
+        <p>Privileged Identity Management for just-in-time admin role activation, approval workflows, and safer privileged access operations.</p>
       </div>
       <div class="roadmap-card">
         <div class="roadmap-icon">📱</div>
@@ -1207,7 +1207,7 @@ footer p {
     </div>
     <div class="skill-card">
       <h4>Automation</h4>
-      <p>Power Automate scheduled flows, Microsoft Graph API, automated reporting pipelines</p>
+      <p>Power Automate scheduled flows and usage reporting workflow design</p>
     </div>
     <div class="skill-card">
       <h4>Monitoring</h4>
@@ -1219,8 +1219,8 @@ footer p {
 <!-- CLOSING -->
 <div class="closing reveal">
   <div class="section-eyebrow" style="justify-content:center;margin-bottom:1.5rem;">Takeaway</div>
-  <h2>This isn't a demo.<br><em>It's a live tenant.</em></h2>
-  <p>Every screenshot in this case study was taken from a real Microsoft 365 tenant with real configurations applied. TechSolutions' 300-employee environment was designed, deployed, secured, and instrumented — end to end — by one administrator.</p>
+  <h2>Live lab evidence.<br><em>Clear administrator story.</em></h2>
+  <p>This case study documents a Microsoft 365 lab tenant configured by one administrator to model identity, collaboration, security, compliance, monitoring, and reporting workflows for a 300-employee organization.</p>
   <div class="cta-row">
     <a href="https://github.com/rahatislamanik-spec/TechSolutions-Microsoft365" class="cta cta-primary">View on GitHub</a>
     <a href="https://linkedin.com/in/rahatislamanik" class="cta cta-secondary">Connect on LinkedIn</a>
