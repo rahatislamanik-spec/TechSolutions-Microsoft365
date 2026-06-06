@@ -12,7 +12,7 @@ This map connects the TechSolutions Microsoft 365 case study claims to the scree
 | User profile metadata populated | `assets/screenshots/04-user-profile-configured-company-logo-department-and-job-title-populate.jpg` |
 | IT group creation reviewed | `assets/screenshots/05-techsolutions-it-group-final-configuration-review-before-creation.jpg` |
 | IT group creation confirmed | `assets/screenshots/06-it-group-successfully-created-with-correct-members.jpg` |
-| HR group members configured | `assets/screenshots/07-techsolutions-hr-group-emma-johnson-and-sophia-clark-configured.jpg` |
+| HR group sample members configured | `assets/screenshots/07-techsolutions-hr-group-members-configured.jpg` |
 | Master group model configured for tenant-wide communications | `assets/screenshots/08-techsolutions-master-group-all-10-users-enrolled-for-tenant-wide-manag.jpg` |
 | HR SharePoint permissions and access control validated | `assets/screenshots/09-hr-sharepoint-site-full-control-for-owners-edit-for-members-access-den.jpg` |
 | Marketing team creation rights validated | `assets/screenshots/10-marketing-team-created-in-microsoft-teams-all-marketing-users-added-as.jpg` |
