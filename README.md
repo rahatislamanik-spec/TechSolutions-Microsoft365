@@ -36,6 +36,8 @@ The screenshots show real portal configuration work performed in a lab tenant. T
 | Power Automate reporting | Built as scheduled lab flow | Flow configuration screenshots |
 | Sensitivity labels, PIM, Intune | Roadmap | Not implemented in this repo |
 
+For the full screenshot-to-claim map, see [docs/evidence-map.md](docs/evidence-map.md).
+
 ---
 
 ## Tech Stack
