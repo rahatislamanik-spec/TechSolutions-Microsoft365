@@ -42,7 +42,11 @@ For the full screenshot-to-claim map, see [docs/evidence-map.md](docs/evidence-m
 
 ## Architecture Artifact
 
-For a 60-second view of the lab tenant design, see the [Microsoft 365 governance architecture diagram](docs/m365-governance-architecture.html).
+![Microsoft 365 Governance Architecture](docs/images/m365-governance-architecture.svg)
+
+This diagram gives a 60-second view of the lab tenant design across identity, collaboration, security, compliance, monitoring, and automation.
+
+[View interactive HTML version](docs/m365-governance-architecture.html)
 
 ---
 
