@@ -46,7 +46,7 @@ For the full screenshot-to-claim map, see [docs/evidence-map.md](docs/evidence-m
 
 This diagram gives a 60-second view of the lab tenant design across identity, collaboration, security, compliance, monitoring, and automation.
 
-[View interactive HTML version](docs/m365-governance-architecture.html)
+[View interactive HTML version](https://rahatislamanik-spec.github.io/TechSolutions-Microsoft365/docs/m365-governance-architecture.html)
 
 ---
 
