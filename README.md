@@ -2,7 +2,7 @@
 
 ### Microsoft 365 Administration Case Study in a Live Lab Tenant
 
-**Md Rahat Islam Anik · Self-Directed Microsoft 365 Case Study · 2025**
+**Md Rahat Islam Anik · Microsoft 365 Administration Case Study · 2026**
 
 [![Live Case Study](https://img.shields.io/badge/Live%20Case%20Study-View%20Now-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)](https://rahatislamanik-spec.github.io/TechSolutions-Microsoft365/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-rahatislamanik-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/rahatislamanik)
