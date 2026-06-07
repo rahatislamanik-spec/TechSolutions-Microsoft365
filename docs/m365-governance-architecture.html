@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSolutions Microsoft 365 Governance Architecture</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { min-height: 100vh; padding: 32px; background: #eef3f8; color: #172033; font-family: "Segoe UI", Calibri, Arial, sans-serif; }
+        .container { max-width: 1280px; margin: 0 auto; padding: 34px; background: #fff; border: 1px solid #d5deea; border-radius: 10px; box-shadow: 0 16px 42px rgba(23,32,51,.12); }
+        .back-link { display: inline-block; margin-bottom: 22px; color: #2563a6; font-size: 14px; font-weight: 700; text-decoration: none; }
+        header { margin-bottom: 28px; text-align: center; }
+        h1 { margin-bottom: 10px; font-size: 30px; line-height: 1.2; }
+        .subtitle { color: #53647c; line-height: 1.5; }
+        .note { max-width: 900px; margin: 18px auto 0; padding: 14px 16px; background: #f7faff; border: 1px solid #d5deea; border-left: 4px solid #2563a6; border-radius: 6px; color: #36455c; font-size: 14px; line-height: 1.5; text-align: left; }
+        .grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 16px; margin-top: 26px; }
+        .zone { padding: 18px; background: #f8fbff; border: 1px solid #cbd7e7; border-radius: 8px; }
+        .zone h2 { margin-bottom: 14px; padding-bottom: 10px; border-bottom: 2px solid #2563a6; font-size: 17px; color: #25344d; }
+        .node { margin-bottom: 12px; padding: 14px; background: #fff; border: 2px solid #6f8fc0; border-radius: 8px; box-shadow: 0 3px 10px rgba(37,99,166,.12); text-align: center; font-weight: 700; line-height: 1.35; }
+        .node small { display: block; margin-top: 5px; color: #53647c; font-size: 12px; font-weight: 500; }
+        .node.id { background: #2563a6; border-color: #1d4f86; color: #fff; }
+        .node.id small { color: #dce9f8; }
+        .node.sec { background: #fff5f4; border-color: #d66a52; }
+        .node.data { background: #fff9e8; border-color: #d5a51d; }
+        .node.ops { background: #f1fbf8; border-color: #3d9987; }
+        .outcomes { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 12px; margin-top: 24px; padding: 18px; background: #172033; border-radius: 8px; color: #fff; }
+        .outcomes div { text-align: center; font-size: 13px; line-height: 1.4; }
+        .outcomes strong { display: block; margin-bottom: 4px; font-size: 15px; }
+        @media (max-width: 1000px) { .grid, .outcomes { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+        @media (max-width: 700px) { body { padding: 18px; } .container { padding: 24px; } h1 { font-size: 24px; } .grid, .outcomes { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <a class="back-link" href="../README.md">Back to TechSolutions Microsoft 365 case study</a>
+        <header>
+            <h1>Microsoft 365 Governance Architecture</h1>
+            <p class="subtitle">Lab tenant map across identity, collaboration, security, compliance, monitoring, and automation</p>
+            <p class="note">This diagram summarizes the configured lab areas shown in the repository evidence. It is not a production rollout claim and does not include roadmap items such as PIM, Intune, or sensitivity labels.</p>
+        </header>
+
+        <section class="grid" aria-label="Microsoft 365 governance architecture">
+            <section class="zone">
+                <h2>Identity Foundation</h2>
+                <div class="node id">Entra ID Users<small>10 sample users across IT, HR, Marketing</small></div>
+                <div class="node id">M365 E5 Licensing<small>Assigned through Admin Center evidence</small></div>
+                <div class="node id">M365 Groups<small>Department groups plus all-user group</small></div>
+            </section>
+            <section class="zone">
+                <h2>Collaboration Layer</h2>
+                <div class="node ops">SharePoint Sites<small>IT, HR, Marketing permissions model</small></div>
+                <div class="node ops">Teams Workspace<small>Marketing collaboration validated</small></div>
+                <div class="node ops">Viva Engage<small>Internal-only community posture</small></div>
+            </section>
+            <section class="zone">
+                <h2>Security & Compliance</h2>
+                <div class="node sec">Defender for Office 365<small>Safe Links, Safe Attachments, anti-phishing</small></div>
+                <div class="node data">Purview DLP<small>Canadian PII and financial data policies</small></div>
+                <div class="node data">Insider Risk / Adaptive Protection<small>Lab policy evidence and risk-based posture</small></div>
+            </section>
+            <section class="zone">
+                <h2>Operations</h2>
+                <div class="node ops">Audit Log Search<small>SharePoint file activity review</small></div>
+                <div class="node ops">Power Automate<small>Scheduled usage reporting flow</small></div>
+                <div class="node ops">Service Health / Secure Score<small>Operational visibility and posture review</small></div>
+            </section>
+        </section>
+
+        <section class="outcomes" aria-label="Governance outcomes">
+            <div><strong>Onboarding</strong>Users, licenses, groups, and collaboration access.</div>
+            <div><strong>Protection</strong>Email security, DLP, encryption, and risk policies.</div>
+            <div><strong>Governance</strong>SharePoint, OneDrive, retention, and audit visibility.</div>
+            <div><strong>Operations</strong>Monthly reporting and tenant health review.</div>
+        </section>
+    </main>
+</body>
+</html>

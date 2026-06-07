@@ -40,6 +40,12 @@ For the full screenshot-to-claim map, see [docs/evidence-map.md](docs/evidence-m
 
 ---
 
+## Architecture Artifact
+
+For a 60-second view of the lab tenant design, see the [Microsoft 365 governance architecture diagram](docs/m365-governance-architecture.html).
+
+---
+
 ## Tech Stack
 
 `Microsoft Entra ID` · `Exchange Online` · `SharePoint Online` · `OneDrive for Business` · `Microsoft Defender for Office 365` · `Microsoft Purview` · `DLP` · `Insider Risk Management` · `Adaptive Protection` · `Viva Engage` · `Power Automate` · `Microsoft Secure Score` · `Service Health`
