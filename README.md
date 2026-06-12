@@ -1,4 +1,5 @@
 # TechSolutions Inc. — Microsoft 365 Enterprise Deployment
+> **Status:** Portfolio Complete — v1.0
 
 ### Microsoft 365 Administration Case Study in a Live Lab Tenant
 
